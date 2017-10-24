@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The Grumpy Cat" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KA3-jZ-3gO">
+                                <rect key="frame" x="21" y="68" width="307" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="PUn-uF-SFo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EWn-sx-7y8">
+                                <rect key="frame" x="97.5" y="586" width="180" height="0.0"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfm-aj-g3F">
+                                        <rect key="frame" x="115" y="0.0" width="45" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Luj-fk-uFd"/>
+                                            <constraint firstAttribute="width" constant="45" id="coa-7v-TxQ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="kgo-XZ-AeB"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="twitter"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nck-hE-F4f">
+                                        <rect key="frame" x="67" y="0.0" width="45" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="MS3-S3-mBG"/>
+                                            <constraint firstAttribute="width" constant="45" id="ezg-0r-wbk"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Image"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZP-WZ-G4s">
+                                        <rect key="frame" x="20" y="0.0" width="45" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="8G8-I9-eFT"/>
+                                            <constraint firstAttribute="height" constant="40" id="90V-kc-3Ih"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="fb"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="5ZP-WZ-G4s" firstAttribute="top" secondItem="hfm-aj-g3F" secondAttribute="top" id="7qe-p8-ZLQ"/>
+                                    <constraint firstItem="5ZP-WZ-G4s" firstAttribute="leading" secondItem="EWn-sx-7y8" secondAttribute="leading" constant="20" id="8xY-Om-BJy"/>
+                                    <constraint firstAttribute="height" constant="40" id="FzS-x5-xNp"/>
+                                    <constraint firstItem="hfm-aj-g3F" firstAttribute="top" secondItem="EWn-sx-7y8" secondAttribute="top" id="Hjs-bm-m0g"/>
+                                    <constraint firstItem="5ZP-WZ-G4s" firstAttribute="bottom" secondItem="nck-hE-F4f" secondAttribute="bottom" id="YnO-CX-9Df"/>
+                                    <constraint firstAttribute="trailing" secondItem="hfm-aj-g3F" secondAttribute="trailing" constant="20" id="d5R-nY-BL9"/>
+                                    <constraint firstItem="nck-hE-F4f" firstAttribute="leading" secondItem="5ZP-WZ-G4s" secondAttribute="trailing" constant="2" id="gUf-hz-q6g"/>
+                                    <constraint firstItem="hfm-aj-g3F" firstAttribute="leading" secondItem="nck-hE-F4f" secondAttribute="trailing" constant="3" id="k2B-fc-HWk"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ekx-nd-9VT">
+                                <rect key="frame" x="117.5" y="596" width="140" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Mx6-5w-3Th"/>
+                                    <constraint firstAttribute="width" constant="140" id="aiU-gq-bRm"/>
+                                </constraints>
+                                <state key="normal" title="Don't contact me">
+                                    <color key="titleColor" red="0.92592292750000005" green="0.85383797299999997" blue="0.82322997109999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.92592292750000005" green="0.92592292750000005" blue="0.92592292750000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="grumpy-cat" translatesAutoresizingMaskIntoConstraints="NO" id="ap2-Fb-Q5w">
+                                <rect key="frame" x="48.5" y="28" width="278" height="189"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ap2-Fb-Q5w" secondAttribute="height" multiplier="278:189" id="Udj-Be-Syd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyG-CH-3mk">
+                                <rect key="frame" x="21" y="342" width="333" height="0.0"/>
+                                <string key="text">Tardar Sauce (born April 4, 2012), commonly known as Grumpy Cat, is a media personality. She is known for her permanently "grumpy" facial appearance, which is caused by an underbite and feline dwarfism.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ap2-Fb-Q5w" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="1i5-Ba-lxm"/>
+                            <constraint firstItem="EWn-sx-7y8" firstAttribute="top" secondItem="FyG-CH-3mk" secondAttribute="bottom" constant="244" id="2WL-3v-P9K"/>
+                            <constraint firstItem="FyG-CH-3mk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="3T2-Oy-vx0"/>
+                            <constraint firstItem="Ekx-nd-9VT" firstAttribute="top" secondItem="EWn-sx-7y8" secondAttribute="bottom" constant="10" id="7Gq-qf-q6n"/>
+                            <constraint firstItem="KA3-jZ-3gO" firstAttribute="top" secondItem="ap2-Fb-Q5w" secondAttribute="bottom" constant="25" id="BYm-Ha-zqD"/>
+                            <constraint firstItem="KA3-jZ-3gO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="242" id="Jzg-Tl-L0s"/>
+                            <constraint firstItem="ap2-Fb-Q5w" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="L5T-0X-RbW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FyG-CH-3mk" secondAttribute="trailing" constant="5" id="dXN-px-E14"/>
+                            <constraint firstItem="KA3-jZ-3gO" firstAttribute="leading" secondItem="FyG-CH-3mk" secondAttribute="leading" id="eLZ-Yq-DLq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KA3-jZ-3gO" secondAttribute="trailing" constant="31" id="fcD-N5-2hn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ekx-nd-9VT" secondAttribute="bottom" constant="41" id="gMr-y4-CD7"/>
+                            <constraint firstItem="Ekx-nd-9VT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="psR-Sl-gBR"/>
+                            <constraint firstItem="EWn-sx-7y8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qem-bs-IlL"/>
+                            <constraint firstItem="FyG-CH-3mk" firstAttribute="top" secondItem="KA3-jZ-3gO" secondAttribute="bottom" constant="274" id="sP6-s4-JKw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.625" y="122.46093749999999"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="512" height="512"/>
+        <image name="fb" width="400" height="400"/>
+        <image name="grumpy-cat" width="3000" height="2049"/>
+        <image name="twitter" width="171" height="139"/>
+    </resources>
+</document>
